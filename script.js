@@ -23,7 +23,8 @@ cita = data;
    $("#quoteText").text(data.quote);
 
 
-twitLink = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + data.quote;
+twitLink = "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURI(data.quote);
+console.log(twitLink);
 
 
 // learn about web-intent:
